@@ -1,6 +1,6 @@
 :root {
-    --cor-de-fundo: #ee8199;
-    --verde: #81b877;
+    --cor-de-fundo: #f39dd9;
+    --verde: #f52e70;
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
     --botao-inativo: #3a375e80;
@@ -35,7 +35,7 @@ body {
 }
 
 .botao {
-    font-family: "Crakra Petch", sans-serif;
+    
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -54,12 +54,12 @@ body {
     display: block;
 }
 
-/*Aula 03*/
 
-.ativo {
+.botao.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
+
 
 @media screen and (min-width: 768px) {
     .botoes {
@@ -67,19 +67,34 @@ body {
     }
 
     .botao:first-child {
-        border-radius: 40px 40px 0 0;
+        border-radius: 40px 0 0 0;
     }
 
-    @media screen and (min-width: 768px) {
-        .botoes {
-            display: flex;
-        }
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
+    .abas-textos {
+        background-color: var(--texto-fundo);
+        padding: 40px;
+        border-radius: 0 0 40px 40px;
+    }
 
-        .botao:first-child {
-            border-radius: 40px 0 0 0;
-        }
+    .aba-conteudo.ativo {
+        display: block;
+    }
 
-        .botao:last-child {
-            border-radius: 0 40px 0 0;
-        }
+    .aba-conteudo {
+        display: none;
+    }
+
+    .aba-conteudo-titulo-principal {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .aba-conteudo-titulo-secundario {
+        text-align: center;
+        color: var(--verde);
+        text-transform: uppercase;
     }
