@@ -1,8 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap')
- 
- body{
-background: linear-gradient(red, blue);
-    font-family:Dancing Scrip;
- }
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    background: linear-gradient(rgb(76, 160, 101), rgb(76, 160, 101));
+    font-family: Josefin Sans;
 
+}
